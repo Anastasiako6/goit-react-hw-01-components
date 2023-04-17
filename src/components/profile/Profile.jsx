@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types';
+import { UserProf } from './Profile.styled';
+import { InfoCard } from './InfoCard.styled';
+import { PhotoCard } from './PhotoCard.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
-    <div class="profile">
-  <div class="description">
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-      alt="User avatar"
-      class="avatar"
-    />
+  return (
+      <UserProf>
+  <InfoCard>
+    <PhotoCard src={avatar} alt={username} />
     <p class="name">Petra Marica</p>
     <p class="tag">@pmarica</p>
     <p class="location">Salvador, Brasil</p>
-  </div>
+  </InfoCard>
 
   <ul class="stats">
     <li>
@@ -27,5 +27,18 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       <span class="quantity">3000</span>
     </li>
   </ul>
-</div>
+</UserProf>
+    )
 }
+
+Profile.propTypes = {
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.shape({
+        followers: PropTypes.number.isRequired,
+        views: PropTypes.number.isRequired,
+        likes: PropTypes.number.isRequired,
+    }).isRequired,
+};
