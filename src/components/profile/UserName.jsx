@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const NamePar = styled.p`
+export const UserName = styled.p`
     color: red;
 `
