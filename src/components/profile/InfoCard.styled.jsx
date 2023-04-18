@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const InfoCard = styled.div`
-    width: 400px;
-    height: auto;
+    padding: 50px;
+    color: ${ p => p.theme.colors.text};
+    font-family: sans-serif;
+    width: auto;
 `;

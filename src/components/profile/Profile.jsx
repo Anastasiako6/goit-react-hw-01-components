@@ -1,35 +1,45 @@
 import PropTypes from 'prop-types';
 import { UserProf } from './Profile.styled';
 import { InfoCard } from './InfoCard.styled';
+import { StatsList } from './Stats.styled';
+import { StatisItem } from './StatsItem';
 import { PhotoCard } from './PhotoCard.styled';
-import { UserName } from './UserName';
+// import { UserName } from './UserName';
 
-export const Profile = ({ username, tag, location, avatar, stats }) => {
+export const Profile = ({ 
+  items: { username, tag, location, avatar, stats: {
+    followers, views, likes
+  }},
+ }) => {
   return (
       <UserProf>
   <InfoCard>
-    <PhotoCard src={avatar} alt={username} width="150"/>
-        <UserName>{username}</UserName>
-    <p class="tag">@pmarica</p>
-    <p class="location">Salvador, Brasil</p>
+    <PhotoCard
+      src={avatar}
+      alt={username}
+      width="240px"
+    />
+    <p class="name">{username}</p>
+    <p class="tag">{tag}</p>
+    <p class="location">{location}</p>
   </InfoCard>
 
-  <ul class="stats">
-    <li>
+  <StatsList>
+    <StatisItem>
       <span class="label">Followers</span>
-      <span class="quantity">1000</span>
-    </li>
-    <li>
+      <span class="quantity">{followers}</span>
+    </StatisItem>
+    <StatisItem>
       <span class="label">Views</span>
-      <span class="quantity">2000</span>
-    </li>
-    <li>
+      <span class="quantity">{views}</span>
+    </StatisItem>
+    <StatisItem>
       <span class="label">Likes</span>
-      <span class="quantity">3000</span>
-    </li>
-  </ul>
-</UserProf>
-    )
+      <span class="quantity">{likes}</span>
+    </StatisItem>
+  </StatsList>
+    </UserProf>
+  )
 }
 
 Profile.propTypes = {

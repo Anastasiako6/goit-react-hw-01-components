@@ -5,5 +5,7 @@ export const UserProf = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #bbbbc0;
+    padding: 150px;
+    background-color: ${p => p.theme.colors.bgCard};
+    border-radius: 2px;
 `;
