@@ -2,13 +2,14 @@ import PropTypes from 'prop-types';
 import { UserProf } from './Profile.styled';
 import { InfoCard } from './InfoCard.styled';
 import { PhotoCard } from './PhotoCard.styled';
+import { NamePar } from './NamePar';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
       <UserProf>
   <InfoCard>
     <PhotoCard src={avatar} alt={username} />
-    <p class="name">Petra Marica</p>
+        <NamePar>{username }</NamePar>
     <p class="tag">@pmarica</p>
     <p class="location">Salvador, Brasil</p>
   </InfoCard>
