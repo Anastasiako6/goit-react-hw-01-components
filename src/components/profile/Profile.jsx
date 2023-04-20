@@ -2,9 +2,13 @@ import PropTypes from 'prop-types';
 import { UserProf } from './Profile.styled';
 import { InfoCard } from './InfoCard.styled';
 import { StatsList } from './Stats.styled';
-import { StatisItem } from './StatsItem';
+import { StatisItem } from './StatsItem.styled';
 import { PhotoCard } from './PhotoCard.styled';
-// import { UserName } from './UserName';
+import { UserName } from './UserName.styled';
+import { ParInfo } from './TagLocation.styled';
+import { StatisSpan } from './StatisSpan.styled';
+import { SpanNumbers } from './SpanNumbers.styled';
+import { InfoTag } from './InfoTag.styled';
 
 export const Profile = ({ 
   items: { username, tag, location, avatar, stats: {
@@ -19,23 +23,23 @@ export const Profile = ({
       alt={username}
       width="240px"
     />
-    <p class="name">{username}</p>
-    <p class="tag">{tag}</p>
-    <p class="location">{location}</p>
+    <UserName>{username}</UserName>
+    <InfoTag>@{tag}</InfoTag>
+    <ParInfo>{location}</ParInfo>
   </InfoCard>
 
   <StatsList>
     <StatisItem>
-      <span class="label">Followers</span>
-      <span class="quantity">{followers}</span>
+      <StatisSpan>Followers</StatisSpan>
+      <SpanNumbers>{followers}</SpanNumbers>
     </StatisItem>
     <StatisItem>
-      <span class="label">Views</span>
-      <span class="quantity">{views}</span>
+      <StatisSpan>Views</StatisSpan>
+      <SpanNumbers>{views}</SpanNumbers>
     </StatisItem>
     <StatisItem>
-      <span class="label">Likes</span>
-      <span class="quantity">{likes}</span>
+      <StatisSpan>Likes</StatisSpan>
+      <SpanNumbers>{likes}</SpanNumbers>
     </StatisItem>
   </StatsList>
     </UserProf>

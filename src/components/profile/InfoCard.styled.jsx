@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const InfoCard = styled.div`
-    padding: 50px;
-    color: ${ p => p.theme.colors.text};
+    padding: 25px 50px;
+    background-color: ${p => p.theme.colors.bgCard};
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     font-family: sans-serif;
     width: auto;
 `;

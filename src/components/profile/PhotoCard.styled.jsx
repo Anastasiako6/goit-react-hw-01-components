@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const PhotoCard = styled.img`
-    width: 220px;
-    border-radius: 50%; 
+    align-self: center;
+    width: 150px;
+    border-radius: 50%;
 `;

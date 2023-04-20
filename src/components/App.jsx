@@ -10,7 +10,7 @@ export const App = () => {
     <Layout>
       <Profile items={user} />
       <GlobalStyle />
-      {/* <Statistics items={data} /> */}
+      {/* <Statistics title="Upload stats" stats={data} /> */}
     </Layout>
   );
 };

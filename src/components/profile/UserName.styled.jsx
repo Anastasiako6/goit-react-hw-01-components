@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
 export const UserName = styled.p`
-    color: red;
+    font-size: x-large;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    
 `
