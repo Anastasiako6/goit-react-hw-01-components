@@ -8,6 +8,4 @@ export const UserProf = styled.div`
     align-items: center;
     text-align: center;
     padding: 50px 70px;
-    border-radius: 20px;
-    background-color: #d2d2d2;
 `;
