@@ -1,14 +1,17 @@
 import PropTypes from 'prop-types';
-import { UserProf } from './Profile.styled';
-import { InfoCard } from './InfoCard.styled';
-import { StatsList } from './Stats.styled';
-import { StatisItem } from './StatsItem.styled';
-import { PhotoCard } from './PhotoCard.styled';
-import { UserName } from './UserName.styled';
-import { ParInfo } from './TagLocation.styled';
-import { StatisSpan } from './StatisSpan.styled';
-import { SpanNumbers } from './SpanNumbers.styled';
-import { InfoTag } from './InfoTag.styled';
+import {
+  UserProf,
+  InfoCard,
+  StatsList,
+  StatisItem,
+  PhotoCard,
+  UserName,
+  ParInfo,
+  StatisSpan,
+  SpanNumbers,
+  InfoTag,
+} from './Profile.styled';
+
 
 export const Profile = ({ 
   items: { username, tag, location, avatar, stats: {

@@ -3,6 +3,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    padding: 40px;
 }
 
 .item {
@@ -15,7 +16,8 @@
 .title {
     width: auto;
     background-color: #fff;
-    font-size: 20px;
+    color: gray;
+    font-size: 16px;
     margin: 0;
     padding: 30px;
     text-align: center;
