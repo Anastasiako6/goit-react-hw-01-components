@@ -1,7 +1,7 @@
 import { GlobalStyle } from "./GlobalStyle";
 import { Layout } from "./Layout/Layout";
 
-import { Profile } from "./Profile/Profile";
+import { Profile } from './Profile/Profile';
 import user from './Profile/user.json'
 
 import { Statistics } from "./Statistics/Statistics";
