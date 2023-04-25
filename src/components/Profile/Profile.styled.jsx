@@ -50,6 +50,7 @@ export const PhotoCard = styled.img`
     width: 150px;
     border-radius: 50%;
 `;
+
 export const StatisSpan = styled.span`
     font-size: 16px;
     font-family: initial;
