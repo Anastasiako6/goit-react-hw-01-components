@@ -1,8 +1,8 @@
 import { GlobalStyle } from "./GlobalStyle";
 import { Layout } from "./Layout/Layout";
 
-import { Profile } from "./Profile/Profile";
-import user from './Profile/user.json';
+import { Profile } from "./profile/Profile";
+import user from './profile/user.json';
 
 import { Statistics } from "./Statistics/Statistics";
 import data from './Statistics/data.json';
